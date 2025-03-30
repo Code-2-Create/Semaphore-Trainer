@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semaphore Practice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme"> 
+
+    <header>
+        <div class="logo">Semaphore Trainer</div> 
+        <div class="speed-control">
+            <span>Speed (CPM):</span>
+            <button id="decrease-speed" class="control-button">-</button>
+            <span id="speed-value">40</span>
+            <button id="increase-speed" class="control-button">+</button>
+        </div>
+    </header>
+
+    <main>
+        <div class="semaphore-display card"> 
+            <img id="semaphore-image" src="images/neutral.jpg" alt="Semaphore Signal">
+        </div>
+
+        <div class="controls">
+            <button id="play-pause-button" class="action-button">▶ Start</button>
+            <button id="new-sentence-button" class="control-button">🔄 New Sentence</button>
+        </div>
+
+        <div class="answer-area card"> 
+            <input type="text" id="answer-input" placeholder="Enter your answer here">
+            <button id="check-button" class="action-button accent-button">✔ Check Answer</button>
+        </div>
+
+        <div id="feedback-message"></div>
+    </main>
+
+    <footer>
+        <p>Made by Vinayak Sen</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
